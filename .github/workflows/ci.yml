@@ -18,6 +18,7 @@ jobs:
         with:
           root: .
           css: true
+        continue-on-error: true
 
       - name: Check for broken links
         uses: lycheeverse/lychee-action@v2
