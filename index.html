@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mark Ng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-gray: #ecf0f1;
+            --dark-gray: #7f8c8d;
+            --white: #ffffff;
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        header {
+            padding: 2rem 0 1rem;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            padding: 1rem 0;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section h2 {
+            display: none;
+        }
+
+        #office-hours h2 {
+            display: block;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .office-hours-card {
+            background: linear-gradient(135deg, var(--light-gray) 0%, #f8f9fa 100%);
+            border: 2px solid var(--secondary-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 500px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .office-hours-card p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .office-hours-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+        }
+
+        .office-hours-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+        }
+
+        section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--dark-gray);
+            border-top: 1px solid var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .office-hours-card {
+                padding: 1.5rem;
+                margin: 1.5rem auto;
+            }
+
+            #office-hours h2 {
+                font-size: 1.5rem;
+            }
+
+            .office-hours-button {
+                padding: 0.7rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mark Ng</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Founder of <a href="https://roaming-panda.com" target="_blank">Roaming Panda</a></p>
+            <p>Software, AI, Electronics, Additive Manufacturing</p>
+        </section>
+
+        <section id="office-hours">
+            <div class="office-hours-card">
+                <h2>Office Hours</h2>
+                <p>Got a project idea? Need advice?</p>
+                <a href="https://calendar.app.google/RGvZDR8VeLGiLTQk9" target="_blank" class="office-hours-button">Book some time to chat now!</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Portland, OR &bull; <a href="mailto:mark@markng.co.uk">mark@markng.co.uk</a> &bull; 623-252-3664</p>
+            <p>
+                <a href="https://linkedin.com/in/markng" target="_blank">LinkedIn</a> &bull;
+                <a href="https://github.com/markng" target="_blank">GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mark Ng</p>
+    </footer>
+</body>
+</html>
